@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="4" skipped="4" tests="9" time="0.363" timestamp="2022-04-03T08:36:47.959526" hostname="DESKTOP-B07JMOK"><testcase classname="test_Program1" name="test_square_root[8-4.0]" time="0.003"><skipped type="pytest.xfail" message="" /></testcase><testcase classname="test_Program1" name="test_square_root[7-7.0]" time="0.003"><skipped type="pytest.xfail" message="" /></testcase><testcase classname="test_Program1" name="test_square_root[8-7]" time="0.003"><skipped type="pytest.xfail" message="" /></testcase><testcase classname="test_Program1" name="test_quadratic_equation[4-3-8-7]" time="0.001"><skipped type="pytest.skip" message="no need">C:\Users\new\PycharmProjects\april3assignment-04\test_Program1.py:10: no need</skipped></testcase><testcase classname="test_Program1" name="test_cels_to_farh[7-37.8]" time="0.003"><failure message="assert 44.6 == 37.8">celsius = 7, result = 37.8
+
+    @pytest.mark.parametrize("celsius,result",[(7,37.8),(8,36.0)])
+    def test_cels_to_farh(celsius,result):
+        cel=Program1.cels_to_farh(celsius)
+&gt;       assert cel == result
+E       assert 44.6 == 37.8
+
+test_Program1.py:19: AssertionError</failure></testcase><testcase classname="test_Program1" name="test_cels_to_farh[8-36.0]" time="0.003"><failure message="assert 46.4 == 36.0">celsius = 8, result = 36.0
+
+    @pytest.mark.parametrize("celsius,result",[(7,37.8),(8,36.0)])
+    def test_cels_to_farh(celsius,result):
+        cel=Program1.cels_to_farh(celsius)
+&gt;       assert cel == result
+E       assert 46.4 == 36.0
+
+test_Program1.py:19: AssertionError</failure></testcase><testcase classname="test_Program1" name="test_pos_neg_zero" time="0.002" /><testcase classname="test_Program1" name="test_natural_num[18-138]" time="0.003"><failure message="assert 171 == 138">num = 18, result = 138
+
+    @pytest.mark.parametrize("num,result",[(18,138),(8,100)])
+    def test_natural_num(num,result):
+        natnum=Program1.natural_num(num)
+&gt;       assert natnum == result
+E       assert 171 == 138
+
+test_Program1.py:32: AssertionError</failure></testcase><testcase classname="test_Program1" name="test_natural_num[8-100]" time="0.004"><failure message="assert 36 == 100">num = 8, result = 100
+
+    @pytest.mark.parametrize("num,result",[(18,138),(8,100)])
+    def test_natural_num(num,result):
+        natnum=Program1.natural_num(num)
+&gt;       assert natnum == result
+E       assert 36 == 100
+
+test_Program1.py:32: AssertionError</failure></testcase></testsuite></testsuites>
